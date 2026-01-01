@@ -5,7 +5,6 @@ permalink: /about/
 ---
 
 Hé lô mọi người! 👋
-(2k7 chính hiệu).
 ### 🌟 Về mình
 * 🎂 **Sinh năm:** 2007 
 * 🏠 **Sống tại:** Việt Nam.
