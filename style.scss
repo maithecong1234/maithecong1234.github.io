@@ -321,3 +321,15 @@ img:hover {
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); /* Thêm bóng đổ cho nổi bật */
   transition: all 0.3s ease-in-out; /* Chuyển động mượt mà */
 }
+/* --- SỬA LỖI ẢNH ĐÈ LÊN TÊN --- */
+
+/* Đẩy toàn bộ phần thông tin (tên, mô tả) xuống dưới một chút */
+header.site-header {
+    padding-top: 30px !important; /* Bạn có thể tăng số 30 lên nếu muốn nó xuống thấp hơn nữa */
+}
+
+/* Đảm bảo tên của bạn luôn nằm NỔI lên trên ảnh, không bị chìm */
+h1.site-title {
+    position: relative;
+    z-index: 10; /* Số càng lớn thì càng ưu tiên hiển thị lên trên */
+}
