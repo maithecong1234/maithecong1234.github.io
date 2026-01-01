@@ -333,3 +333,31 @@ h1.site-title {
     position: relative;
     z-index: 10; /* Số càng lớn thì càng ưu tiên hiển thị lên trên */
 }
+/* --- SỬA LỖI ẢNH ĐÈ CHỮ (PHIÊN BẢN MẠNH) --- */
+
+/* 1. Ép ảnh avatar nhỏ lại và giữ tỉ lệ đẹp */
+.site-avatar img {
+  width: 120px !important;       /* Chiều rộng cố định */
+  height: auto !important;       /* Chiều cao tự động theo tỉ lệ (không bị méo) */
+  border-radius: 10px !important; /* Bo tròn góc nhẹ */
+  margin-bottom: 25px !important; /* Đẩy chữ "MAI HONG QUYEN" xuống xa 25px */
+  display: block !important;      /* Bắt buộc ảnh đứng riêng 1 dòng */
+  margin-left: auto;
+  margin-right: auto;             /* Căn giữa ảnh */
+}
+
+/* 2. Đảm bảo tiêu đề tên bạn nằm tách biệt */
+h1.site-title {
+  margin-top: 20px !important;    /* Cách xa ảnh thêm một chút nữa cho chắc */
+  display: block !important;
+  clear: both !important;         /* Xóa bỏ mọi sự chồng lấn */
+  z-index: 999;
+  position: relative;
+}
+
+/* 3. Chỉnh lại phần đầu trang cho thoáng */
+header.site-header {
+  min-height: 250px !important;   /* Tăng chiều cao khu vực đầu trang */
+  padding-top: 40px !important;
+  text-align: center !important;  /* Căn giữa tất cả */
+}
