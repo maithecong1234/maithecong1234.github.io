@@ -19,7 +19,7 @@ Kết nối với mình qua Facebook ở dưới chân trang nhé! 👇
     <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
         <div>
             <p><strong>Ngân hàng:</strong> MB Bank (Quân Đội)</p>
-            <p><strong>STK:</strong> <span style="font-size: 1.2em; font-weight: bold; color: #333;">NHẬP_SỐ_STK_CỦA_BẠN_VÀO_ĐÂY</span></p>
+            <p><strong>STK:</strong> <span style="font-size: 1.2em; font-weight: bold; color: #333;">208766</span></p>
             <p><strong>Chủ TK:</strong> MAI HONG QUYEN</p>
             <p><strong>Nội dung:</strong> Ung ho Quyen</p>
         </div>
