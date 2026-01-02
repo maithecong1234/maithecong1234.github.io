@@ -40,26 +40,6 @@ permalink: /about/
 
 <div class="pixel-window">
   <div class="window-header">
-    <span class="window-title">🎵 MUSIC_PLAYER.EXE</span>
-    <div class="window-controls"><div class="dot red"></div></div>
-  </div>
-  
-  <div class="window-content" style="background: #000; color: #2ecc71; text-align: left; font-family: 'VT323', monospace;">
-    <p>SYSTEM: READY... _</p>
-    <br>
-    <div style="border: 2px solid #555; padding: 10px; text-align: center;">
-      ▶ NOW PLAYING: Nhạc của Quyền.mp3
-    </div>
-    
-    <div style="display: flex; gap: 5px; margin-top: 10px;">
-      <button style="flex: 1; background: #333; color: white; border: 1px solid #fff; cursor: pointer;">PREV</button>
-      <button style="flex: 2; background: #54a0ff; color: white; border: 1px solid #fff; cursor: pointer;">PLAY / PAUSE</button>
-      <button style="flex: 1; background: #333; color: white; border: 1px solid #fff; cursor: pointer;">NEXT</button>
-    </div>
-  </div>
-</div>
-<div class="pixel-window">
-  <div class="window-header">
     <span class="window-title">🖼️ IMAGES.EXE</span>
     <div class="window-controls"><div class="dot red"></div><div class="dot yellow"></div><div class="dot green"></div></div>
   </div>
