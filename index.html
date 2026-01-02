@@ -1,18 +1,20 @@
----
-layout: default
----
-
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
-
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
+<div style="text-align: center; margin: 30px 0; padding: 20px; border: 2px dashed #fff; border-radius: 15px;">
+  <h3>🚀 Mục tiêu: Du học Hàn Quốc</h3>
+  <p>Cố gắng mỗi ngày!</p>
+  <h1 id="countdown" style="font-size: 3em; color: #f1c40f; margin: 10px 0;">00 : 00 : 00</h1>
 </div>
+
+<script>
+  // Đặt ngày mục tiêu (Ví dụ: 23/3/2026)
+  var targetDate = new Date("Sep 1, 2026 00:00:00").getTime();
+
+  var x = setInterval(function() {
+    var now = new Date().getTime();
+    var distance = targetDate - now;
+
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    
+    document.getElementById("countdown").innerHTML = days + " ngày " + hours + " giờ nữa";
+  }, 1000);
+</script>

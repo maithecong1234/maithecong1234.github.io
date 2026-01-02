@@ -364,12 +364,21 @@ header.site-header {
 //* --- CÀI ĐẶT MÀU NỀN GRADIENT --- */
 
 body {
-  /* Pha màu từ Tím sang Xanh (Bạn có thể đổi mã màu khác) */
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  
-  background-attachment: fixed; /* Màu nền đứng yên khi cuộn */
-  min-height: 100vh; /* Đảm bảo màu phủ kín màn hình */
-  color: white !important; /* Đổi chữ thành màu trắng cho nổi */
+  /* Ảnh nền Hàn Quốc (bạn có thể thay link khác) */
+  background-image: url('https://images.unsplash.com/photo-1538485399081-7191377e8241?q=80&w=2000&auto=format&fit=crop');
+  background-size: cover;       /* Ảnh phủ kín màn hình */
+  background-attachment: fixed; /* Ảnh đứng yên khi cuộn chuột (hiệu ứng Parallax) */
+  background-position: center;
+  color: #fff;                  /* Chữ màu trắng cho nổi */
+}
+
+/* Tạo một lớp màn đen mờ phủ lên ảnh để dễ đọc chữ */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(44, 62, 80, 0.85); /* Màu xanh tím than mờ 85% */
+  z-index: -1; /* Nằm dưới chữ */
 }
 
 /* --- HIỆU ỨNG DI CHUỘT (HOVER) NÂNG CAO --- */
