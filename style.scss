@@ -372,7 +372,23 @@ body {
   color: white !important; /* Đổi chữ thành màu trắng cho nổi */
 }
 
-/* Đổi màu các đường link thành vàng nhạt cho dễ đọc trên nền tối */
-a {
-  color: #ffd700 !important;
+/* --- HIỆU ỨNG DI CHUỘT (HOVER) NÂNG CAO --- */
+
+/* 1. Link phát sáng khi chạm vào */
+a:hover {
+  color: #ff00cc !important; /* Đổi sang màu hồng neon */
+  text-shadow: 0 0 8px rgba(255, 0, 204, 0.6); /* Tạo vầng sáng xung quanh chữ */
+  text-decoration: none;
+}
+
+/* 2. Ảnh (Avatar, ảnh bài viết) tự động "bay" lên */
+img {
+  transition: all 0.3s ease-in-out; /* Cài đặt chuyển động mượt mà */
+}
+
+img:hover {
+  transform: translateY(-10px) scale(1.05); /* Bay lên 10px và phóng to nhẹ */
+  filter: brightness(1.1); /* Sáng hơn 1 chút */
+  box-shadow: 0 15px 30px rgba(0,0,0,0.3); /* Bóng đổ đậm hơn tạo cảm giác 3D */
+  cursor: pointer; /* Đổi con trỏ thành hình bàn tay */
 }

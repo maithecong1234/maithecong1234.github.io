@@ -82,3 +82,50 @@
     {% include analytics.html %}
   </body>
 </html>
+<script>
+  // Tạo màu sắc ngẫu nhiên
+  function getRandomColor() {
+    var letters = '0123456789ABCDEF';
+    var color = '#';
+    for (var i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+  }
+
+  document.addEventListener('mousemove', function(e) {
+    // Chỉ tạo hạt lấp lánh khi di chuyển chuột nhanh một chút để đỡ rối
+    if (Math.random() < 0.5) { 
+      var sparkle = document.createElement('div');
+      
+      // Thiết kế hạt lấp lánh
+      sparkle.style.position = 'fixed';
+      sparkle.style.left = e.clientX + 'px';
+      sparkle.style.top = e.clientY + 'px';
+      sparkle.style.width = '6px';
+      sparkle.style.height = '6px';
+      sparkle.style.backgroundColor = getRandomColor(); // Màu ngẫu nhiên
+      sparkle.style.borderRadius = '50%'; // Hình tròn
+      sparkle.style.pointerEvents = 'none'; // Không cản trở chuột
+      sparkle.style.zIndex = '9999';
+      sparkle.style.boxShadow = '0 0 10px ' + getRandomColor(); // Phát sáng
+      
+      // Hiệu ứng bay và mờ dần
+      sparkle.style.transition = 'all 0.8s ease-out';
+      
+      document.body.appendChild(sparkle);
+
+      // Cho hạt bay ngẫu nhiên rồi biến mất
+      setTimeout(function() {
+        sparkle.style.transform = 'translate(' + (Math.random()*40 - 20) + 'px, ' + (Math.random()*40 + 20) + 'px)';
+        sparkle.style.opacity = '0';
+        sparkle.style.width = '0px';
+      }, 10);
+
+      // Xóa hạt khỏi web sau 1 giây
+      setTimeout(function() {
+        sparkle.remove();
+      }, 1000);
+    }
+  });
+</script>
