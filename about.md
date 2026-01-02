@@ -12,14 +12,14 @@ Hé lô mọi người! 👋
 *"안녕하세요! 제 이름은 권입니다. 만나서 반가워요!"* (Xin chào, mình là Quyền. Rất vui được gặp bạn!)
 
 Kết nối với mình qua Facebook ở dưới chân trang nhé! 👇
-<div style="margin-top: 50px; background: #f9f9f9; padding: 20px; border-radius: 15px; border-left: 5px solid #2ecc71; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+<div style="margin-top: 50px; background: #f9f9f9; color: #333 !important; padding: 20px; border-radius: 15px; border-left: 5px solid #2ecc71; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
     <h3 style="margin-top: 0; color: #2ecc71;">☕ Mời mình một ly cà phê</h3>
     <p>Nếu bạn thấy blog này hữu ích, hãy ủng hộ mình để có thêm động lực viết bài nhé!</p>
     
     <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
         <div>
             <p><strong>Ngân hàng:</strong> MB Bank (Quân Đội)</p>
-            <p><strong>STK:</strong> <span style="font-size: 1.2em; font-weight: bold; color: #333;">208766</span></p>
+            <p><strong>STK:</strong> <span style="font-size: 1.2em; font-weight: bold; color: #333;">NHẬP_SỐ_STK_CỦA_BẠN_VÀO_ĐÂY</span></p>
             <p><strong>Chủ TK:</strong> MAI HONG QUYEN</p>
             <p><strong>Nội dung:</strong> Ung ho Quyen</p>
         </div>
